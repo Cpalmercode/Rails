@@ -34,11 +34,10 @@
   </p>
 
   <h3>Image</h3>
-  <%= image_tag(@movie.image_file_name) %>
+  <%= image_for(@movie) %>
   </article>
 
 <nav>
-<%= link_to("All Movies", root_path) %> |
 <%= link_to "Edit", edit_movie_path(@movie) %> |
   <%= link_to "Delete", movie_path(@movie), method: :delete, data: { confirm: 'Are you sure?' } %>
 </nav>
